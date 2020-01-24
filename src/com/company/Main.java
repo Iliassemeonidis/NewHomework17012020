@@ -69,58 +69,58 @@ public class Main {
 3. Выход (при выборе все уникальные треки сохраняются в файл и программа завершает работу)
          */
 //
-//        int number =0;
-//        Set <String> set = new TreeSet<>();
-//        String fileName = "play.txt";
-//        try {
-//            Scanner scn = new Scanner(new File(fileName));
-//            while (number != 3) {
-//                Scanner scanner = new Scanner(System.in);
-//                System.out.println(
-//                        "1. Добавить трек\n" +
-//                        "2. Вывести все треки в алфавитном порядке по автору\n" +
-//                        "3. Выход (при выборе все уникальные треки сохраняются в файл и программа завершает работу)");
-//
-//                System.out.println("write number");
-//                number = scanner.nextInt();
-//                switch (number) {
-//                    case 1:
-//
-//                        FileWriter fw = new FileWriter(fileName,true);
-//                        for (int i = 0; i <3 ; i++) {
-//                            scanner = new Scanner(System.in);
-//                            System.out.println("Write truck");
-//                            fw.write(scanner.nextLine()+" "+"\n");
-//                        }
-//                        fw.close();
-//                        break;
-//                    case 2:
-//                        while (scn.hasNextLine()) {
-//                            set.add(scn.nextLine());
-//                        }
-//                        for (String truk : set) {
-//                            System.out.println(truk);
-//                        }
-//                        break;
-//                    default:
-//                        fw = new FileWriter(fileName,true);
-//                        for (String nameTruk : set) {
-//                            fw.write(nameTruk+ ""+"\n");
-//                        }
-//                        System.out.println("bay");
-//                        fw.close();
-//                        break;
-//                }
-//
-//            }
-//
-//
-//            scn.close();
-//
-//
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
+        int number =0;
+        Set <String> set = new TreeSet<>();
+        String fileName = "play.txt";// jsjsjs
+        try {
+            Scanner scn = new Scanner(new File(fileName));
+            while (number != 3) {
+                Scanner scanner = new Scanner(System.in);
+                System.out.println(
+                        "1. Добавить трек\n" +
+                        "2. Вывести все треки в алфавитном порядке по автору\n" +
+                        "3. Выход (при выборе все уникальные треки сохраняются в файл и программа завершает работу)");
+
+                System.out.println("write number");
+                number = scanner.nextInt();
+                switch (number) {
+                    case 1:
+
+                        FileWriter fw = new FileWriter(fileName,true);
+                        for (int i = 0; i <3 ; i++) {
+                            scanner = new Scanner(System.in);
+                            System.out.println("Write truck");
+                            fw.write(scanner.nextLine()+" "+"\n");
+                        }
+                        fw.close();
+                        break;
+                    case 2:
+                        while (scn.hasNextLine()) {
+                            set.add(scn.nextLine());
+                        }
+                        for (String truk : set) {
+                            System.out.println(truk);
+                        }
+                        break;
+                    default:
+                        fw = new FileWriter(fileName,true);
+                        for (String nameTruk : set) {
+                            fw.write(nameTruk+ ""+"\n");
+                        }
+                        System.out.println("bay");
+                        fw.close();
+                        break;
+                }
+
+            }
+
+
+            scn.close();
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
 
         // write your code here
